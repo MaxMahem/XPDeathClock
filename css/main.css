@@ -137,7 +137,8 @@ nav a:hover {
 }
 
 .main article h1, .main aside h1 {
-    font-size: 2em;
+    font-size:   2em;
+    line-height: 1em;
 }
 
 .main aside {
