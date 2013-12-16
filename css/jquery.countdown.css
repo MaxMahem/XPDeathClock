@@ -2,6 +2,11 @@
 .hasCountdown {
 	border: 1px solid #ccc;
 	background-color: #eee;
+    
+    /* jQuery countdown doesn't seem to have a section for just the descriptors
+     * so we style the whole section here and override the amount back to normal
+     */
+    font-weight: bold;
 }
 .countdown_rtl {
 	direction: rtl;
@@ -44,6 +49,7 @@
 }
 .countdown_amount {
 	font-size: 200%;
+    font-weight: normal; /* overriden back to normal here */
 }
 .countdown_descr {
 	display: block;
