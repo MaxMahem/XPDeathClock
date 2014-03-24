@@ -10,6 +10,14 @@ textarea {
     color: #222;
 }
 
+a {
+    color:  #006400;
+}
+
+a:visited {
+    color: #8B0000;
+}
+
 body {
     font-size: 1em;
     line-height: 1.4;
@@ -98,37 +106,6 @@ body {
 }
 
 /* ==============
-    MOBILE: Menu
-   ============== */
-
-nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-nav a {
-    display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
-
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-
-    color: white;
-    background: #C0C0C0;
-}
-
-nav a:hover,
-nav a:visited {
-    color: white;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* ==============
     MOBILE: Main
    ============== */
 
@@ -176,46 +153,18 @@ body {
     background-image: url('img/bliss.jpg');
     background-size: cover !important;
     background-repeat: no-repeat no-repeat !important;
+    
+    /* transition to fade out the background */
+    transition: background-image 2.0s ease-in-out;
+}
+
+body.anti {
+    background-image: url('img/anti-bliss.jpg');
 }
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-
-@media only screen and (min-width: 480px) {
-
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== */
-
-    nav a {
-        float: left;
-        width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
-        margin-bottom: 0;
-    }
-
-    nav li:first-child a {
-        margin-left: 0;
-    }
-
-    nav li:last-child a {
-        margin-right: 0;
-    }
-
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-    nav ul li {
-        display: inline;
-    }
-
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
-}
 
 @media only screen and (min-width: 768px) {
 
@@ -236,11 +185,6 @@ body {
 
     .title {
         float: left;
-    }
-
-    nav {
-        float: right;
-        width: 38%;
     }
 
 /* ============
