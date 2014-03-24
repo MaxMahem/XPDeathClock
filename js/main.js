@@ -14,7 +14,7 @@ $(document).ready(function() {
     // this function iniates an AJAX call to the server to get time. If it fails it pulls time from the client.
     function serverTime() { 
         var time = null; 
-        $.ajax({url: 'http://YOURSERVERHERE', 
+        $.ajax({url: 'http://xpdeathclock.maxmahem.net/serverTime.php', 
             async: false, dataType: 'text', 
             success: function(text) { 
                 time = new Date(text); 
@@ -26,4 +26,9 @@ $(document).ready(function() {
         
         return time; 
     }
+    
+    // wait 30 seconds and then change the background!
+    setTimeout(function(){
+        $('body').addClass('anti');
+    }, 15000);
 });
