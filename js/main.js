@@ -27,6 +27,9 @@ $(document).ready(function() {
         return time; 
     }
     
+    // preload the CSS image.
+    $('<img />').attr('src', '/css/img/anti-bliss.jpg').appendTo('body').css('display','none');
+    
     // wait 30 seconds and then change the background!
     setTimeout(function(){
         $('body').addClass('anti');
